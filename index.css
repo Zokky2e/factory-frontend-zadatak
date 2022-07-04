@@ -9,6 +9,12 @@ body {
 .other-content {
   height: 100px;
   background-color: grey;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.other-content p {
+  padding: 0 40px;
 }
 .main-content {
   display: grid;
