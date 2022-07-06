@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="index.js"></script>
+
     <title>Factory Slider</title>
   </head>
   <body>
     <div class="page-wrapper">
-      <div class="other-content"><p>Skup drugih elemenata na stranici</p></div>
+      <div class="other-content">
+        <div class="other-content gap"></div>
+        <p>Skup drugih elemenata na stranici</p>
+      </div>
       <div class="main-content">
         <div class="media-scroller inline-snap" id="scroller">
           <div class="media-group">
@@ -45,23 +48,14 @@
             <div class="media-element">
               <img src="./Assets/slider-image-9.jpg" alt="img" />
             </div>
+            <div class="media-element">
+              <img src="./Assets/slider-image-6.jpg" alt="img" />
+            </div>
           </div>
         </div>
         <div class="arrow-buttons">
-          <button id="buttonLeft" onclick="scrollToLeft()">
-            <img
-              id="imageLeft"
-              src="./Assets/arrow-blue-left.png"
-              alt="arrow-blue-left"
-            />
-          </button>
-          <button id="buttonRight" onclick="scrollToRight()">
-            <img
-              id="imageRight"
-              src="./Assets/arrow-blue-right.png"
-              alt="arrow-blue-left"
-            />
-          </button>
+          <button class="buttonLeft" id="buttonLeft"></button>
+          <button class="buttonRight" id="buttonRight"></button>
         </div>
         <div class="text-element">
           <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
@@ -73,7 +67,10 @@
           </p>
         </div>
       </div>
-      <div class="other-content"><p>Skup drugih elemenata na stranici</p></div>
+      <div class="other-content">
+        <p>Skup drugih elemenata na stranici</p>
+      </div>
     </div>
+    <script defer src="index.js"></script>
   </body>
 </html>

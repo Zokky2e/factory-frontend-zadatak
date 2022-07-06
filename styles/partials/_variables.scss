@@ -1,0 +1,38 @@
+$black: #000000;
+$dark-gray: #47494c;
+$light-gray: #dddddd;
+$blue: #134880;
+$color-regular: #47494c;
+$color-bold: #134880;
+$white-text: #ffffff;
+@font-face {
+  font-family: "SourseSansProBold";
+  src: url("../../assets/SourceSansPro-Bold.ttf");
+}
+@font-face {
+  font-family: "SourseSansProRegular";
+  src: url("../../assets/SourceSansPro-Regular.ttf");
+}
+@mixin fontRegular {
+  font-family: "SourseSansProRegular", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-regular;
+}
+@mixin fontBold {
+  font-family: "SourseSansProBold", sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  color: $color-bold;
+}
+@mixin wrapper {
+  width: $page-width;
+  margin: 0 auto;
+}
+
+@mixin background {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+$page-width: 940px;
+$margin-main: 60px 0 60px -480px;

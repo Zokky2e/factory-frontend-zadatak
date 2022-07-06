@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "SourseSansProBold";
+  src: url("../../assets/SourceSansPro-Bold.ttf");
+}
+@font-face {
+  font-family: "SourseSansProRegular";
+  src: url("../../assets/SourceSansPro-Regular.ttf");
+}
+body {
+  margin: 0;
+}
+
+.page-wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.other-content {
+  min-width: 300px;
+  height: 100px;
+  background-color: #dddddd;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.other-content p {
+  padding: 0 0 0 80px;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: "HelveticaNeue";
+}
+
+.gap {
+  border-right: 20px solid #ffffff;
+}
+
+.main-content {
+  width: 160%;
+  display: grid;
+  grid-template-columns: 73% 2% 20%;
+  gap: 16px;
+  margin: 60px 0 60px -480px;
+}
+
+.media-scroller {
+  left: 0;
+  max-width: 1100px;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 5px;
+  overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+.inline-snap {
+  scroll-padding-inline: 16px;
+}
+.inline-snap > * {
+  scroll-snap-align: start;
+}
+.inline-snap > .media-group {
+  display: flex;
+}
+
+.media-element {
+  flex-grow: 0;
+  flex-shrink: 1;
+  padding: 0 5px;
+}
+.media-element > img {
+  height: 200px;
+  border-radius: 5px;
+}
+
+.arrow-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 10;
+  left: -80px;
+  top: 250px;
+}
+.arrow-buttons button {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+.arrow-buttons img {
+  aspect-ratio: 1/1;
+}
+
+.buttonLeft {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../assets/arrow-gray-left.png");
+}
+.buttonLeft:hover {
+  background-image: url("../assets/arrow-blue-left.png");
+  border-color: #134880;
+}
+
+.buttonRight {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../assets/arrow-gray-right.png");
+}
+.buttonRight:hover {
+  background-image: url("../assets/arrow-blue-right.png");
+  border-color: #134880;
+}
+
+.text-element {
+  margin: auto 0;
+  position: relative;
+  top: -68px;
+  left: -48px;
+  font-family: "SourseSansProRegular", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #47494c;
+  letter-spacing: -0.2px;
+}
+.text-element > h1 {
+  font-family: "SourseSansProBold", sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  color: #134880;
+}
+
+/*# sourceMappingURL=index.css.map */
