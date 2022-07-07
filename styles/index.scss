@@ -24,14 +24,14 @@ body {
   border-right: 20px solid $white-text;
 }
 .main-content {
+  padding-left: 80px;
   width: 1430px;
   display: grid;
   grid-template-columns: 73% 2% 20%;
   margin: $margin-main;
 }
 .media-scroller {
-  left: 0;
-  max-width: 1100px;
+  max-width: 1140px;
   display: grid;
   grid-auto-flow: row;
   gap: 5px;
@@ -43,10 +43,17 @@ body {
 .inline-snap {
   scroll-padding-inline: 16px;
   > * {
-    scroll-snap-align: start;
+    scroll-snap-align: end;
   }
-  > .media-group {
+  .media-group {
     display: flex;
+    justify-content: flex-start;
+    &:first-of-type {
+      justify-content: flex-end;
+    }
+    &:nth-of-type(2) {
+      padding-left: 34px;
+    }
   }
 }
 .media-element {
@@ -65,7 +72,7 @@ body {
   gap: 10px;
   position: relative;
   z-index: 10;
-  left: -44px;
+  left: -49px;
   top: 210px;
   button {
     width: 60px;
