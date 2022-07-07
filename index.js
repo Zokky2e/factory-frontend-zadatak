@@ -5,11 +5,11 @@ $(document).ready(function () {
   let botLast = $("#bottom .media-element:last-of-type");
   let topMedia = $("#top");
   let botMedia = $("#bottom");
-  $(".arrow-buttons button").prop("disabled", false);
+  $(".arrow-buttons button").prop("disabled", "false");
   $(".arrow-buttons button").css("cursor", "pointer");
 
   $(".buttonRight").on("click", function () {
-    $(".arrow-buttons button").prop("disabled", true);
+    $(".arrow-buttons button").prop("disabled", "true");
     $(".arrow-buttons button").css("cursor", "not-allowed");
     const imageWidthTop = topLast.width();
     const imageWidthBottom = botLast.width();
@@ -33,7 +33,7 @@ $(document).ready(function () {
     topMedia.prepend(tempTop);
     tempTop.fadeIn(500);
     tempBot.fadeIn(500);
-    $(".arrow-buttons button").prop("disabled", false);
+    $(".arrow-buttons button").prop("disabled", "false");
     $(".arrow-buttons button").css("cursor", "pointer");
     topFirst = $("#top .media-element:first-of-type");
     topLast = $("#top .media-element:last-of-type");
@@ -42,7 +42,7 @@ $(document).ready(function () {
   });
 
   $(".buttonLeft").on("click", function () {
-    $(".arrow-buttons button").prop("disabled", true);
+    $(".arrow-buttons button").prop("disabled", "true");
     $(".arrow-buttons button").css("cursor", "not-allowed");
     const imageWidthTop = topFirst.width();
     const imageWidthBottom = botFirst.width();
@@ -66,7 +66,7 @@ $(document).ready(function () {
     botMedia.append(tempBot);
     tempTop.fadeIn(500);
     tempBot.fadeIn(500);
-    $(".arrow-buttons button").prop("disabled", false);
+    $(".arrow-buttons button").prop("disabled", "false");
     $(".arrow-buttons button").css("cursor", "pointer");
     topFirst = $("#top .media-element:first-of-type");
     topLast = $("#top .media-element:last-of-type");
