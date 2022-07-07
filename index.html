@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./styles/index.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <title>Factory Slider</title>
   </head>
   <body>
@@ -18,7 +17,27 @@
       </div>
       <div class="main-content">
         <div class="media-scroller inline-snap" id="scroller">
-          <div class="media-group">
+          <div class="media-group" id="top">
+            <div class="media-element">
+              <img src="./Assets/slider-image-7.jpg" alt="img" />
+            </div>
+            <div class="media-element">
+              <img src="./Assets/slider-image-6.jpg" alt="img" />
+            </div>
+            <div class="media-element">
+              <img src="./Assets/slider-image-9.jpg" alt="img" />
+            </div>
+            <div class="media-element">
+              <img src="./Assets/slider-image-8.jpg" alt="img" />
+            </div>
+            <div class="media-element">
+              <img src="./Assets/slider-image-5.jpg" alt="img" />
+            </div>
+          </div>
+          <div class="media-group" id="bottom">
+            <div class="media-element">
+              <img src="./Assets/slider-image-4.jpg" alt="img" />
+            </div>
             <div class="media-element">
               <img src="./Assets/slider-image-1.jpg" alt="img" />
             </div>
@@ -27,29 +46,6 @@
             </div>
             <div class="media-element">
               <img src="./Assets/slider-image-3.jpg" alt="img" />
-            </div>
-            <div class="media-element">
-              <img src="./Assets/slider-image-4.jpg" alt="img" />
-            </div>
-            <div class="media-element">
-              <img src="./Assets/slider-image-5.jpg" alt="img" />
-            </div>
-          </div>
-          <div class="media-group">
-            <div class="media-element">
-              <img src="./Assets/slider-image-6.jpg" alt="img" />
-            </div>
-            <div class="media-element">
-              <img src="./Assets/slider-image-7.jpg" alt="img" />
-            </div>
-            <div class="media-element">
-              <img src="./Assets/slider-image-8.jpg" alt="img" />
-            </div>
-            <div class="media-element">
-              <img src="./Assets/slider-image-9.jpg" alt="img" />
-            </div>
-            <div class="media-element">
-              <img src="./Assets/slider-image-6.jpg" alt="img" />
             </div>
           </div>
         </div>
@@ -71,6 +67,7 @@
         <p>Skup drugih elemenata na stranici</p>
       </div>
     </div>
-    <script defer src="index.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script defer src="index-min.js"></script>
   </body>
 </html>
